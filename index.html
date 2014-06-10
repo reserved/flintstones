@@ -5,21 +5,37 @@
   <title>FlintStone | Sample App</title>
 </head>
 <body>
-  <div id="page_content" class="container">
-    <p>Application not yet loaded. </p>
-  </div>
-</script>
-<script charset="utf-8" src="js/underscore-min.js"></script>
-  <script charset="utf-8" src="js/backbone-min.js"></script>
-<script charset="utf-8" src="js/backbone-marionette.js">
 
-  <script type="text/x-handlebars-template" id="introduction-template">
-  <h2>An Introduction to Flintstones</h2>
-  <p>
-  The Flintstones is an animated, prime-time American television sitcom that was broadcasted. broadcasted, where? ........... <br/>
-And the para ends abruptly...
-  </p>
+  <div id="page_content" class="container">
+    <h1>Sample FlintStones Application </h1>
+  </div>
+
+  <input type="button" name="flintstones" id="flintstones" value="Flintstones"/>
+  <input type="button" name="rubbles" id="rubbles" value="Rubbles"/>
+
+  <div id="character_content">
+  </div>
+
+  <script id='character' type="text/x-handlebars">
+  <article class="character">
+  <h4>{{name}}</h4>
+  <p>{{description}}</p>
+  <div class="keywords">
+  {{#each keywords}}
+  <span class="keyword"><em>{{this}}</em></span>
+  {{/each}}
+  </div>
+  </article>
   </script>
-<script charset="utf-8" src="js/app.js"></script>
+
+  <script charset="utf-8" src="js/jquery.min.js"></script>
+  <script charset="utf-8" src="js/handlebars.js"></script>
+  <!-- <script charset="utf-8" src="js/handlebars.runtime.js"></script> -->
+  <script charset="utf-8" src="js/templates/flintstones.js"></script>
+  <script charset="utf-8" src="js/underscore-min.js"></script>
+  <script charset="utf-8" src="js/backbone-min.js"></script>
+  <script charset="utf-8" src="js/backbone.marionette.js"></script>
+  <script charset="utf-8" src="js/app.js"></script>
+  <script charset="utf-8" src="js/custom.js"></script>
 </body>
 </html>
