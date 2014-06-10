@@ -1,0 +1,22 @@
+{
+  "name": "FlintStones",
+  "version": "0.0.0",
+  "description": "Sample application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:reserved/flintstones.git"
+  },
+  "keywords": [
+    "flintstones"
+  ],
+  "author": "Ally Ent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reserved/flintstones/issues"
+  },
+  "homepage": "https://github.com/reserved/flintstones"
+}
